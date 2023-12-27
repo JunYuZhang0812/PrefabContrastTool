@@ -372,9 +372,9 @@
             this.m_togIgnorePos.ForeColor = System.Drawing.Color.Black;
             this.m_togIgnorePos.Location = new System.Drawing.Point(742, 8);
             this.m_togIgnorePos.Name = "m_togIgnorePos";
-            this.m_togIgnorePos.Size = new System.Drawing.Size(72, 16);
+            this.m_togIgnorePos.Size = new System.Drawing.Size(102, 16);
             this.m_togIgnorePos.TabIndex = 27;
-            this.m_togIgnorePos.Text = "忽略偏移";
+            this.m_togIgnorePos.Text = "忽略Transform";
             this.m_togIgnorePos.UseVisualStyleBackColor = true;
             this.m_togIgnorePos.CheckedChanged += new System.EventHandler(this.m_togIgnorePos_CheckedChanged);
             // 

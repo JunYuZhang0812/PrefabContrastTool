@@ -93,6 +93,7 @@ namespace PrefabContrastTool.Prefab
 
         public bool Equals(RectTransform other)
         {
+            if (Logic.IgnorePos) return true;
             if (other == null) return false;
             if (!name.Equals(other.name))
             {
@@ -101,7 +102,7 @@ namespace PrefabContrastTool.Prefab
             if (isTransform)
             {
                 var comPare = localScale.Equals(other.localScale) && localRotation.Equals(other.localRotation);
-                if (comPare && !Logic.IgnorePos )
+                if (comPare )
                 {
                     comPare = localPosition.Equals(other.localPosition);
                 }
@@ -111,7 +112,7 @@ namespace PrefabContrastTool.Prefab
             {
                 var comPare = localScale.Equals(other.localScale) && localRotation.Equals(other.localRotation) &&
                     sizeDelta.Equals(other.sizeDelta) && anchorMax.Equals(other.anchorMax) && anchorMin.Equals(other.anchorMin) && pivot.Equals(other.pivot);
-                if (comPare && !Logic.IgnorePos)
+                if (comPare )
                 {
                     comPare = anchoredPosition.Equals(other.anchoredPosition);
                 }
